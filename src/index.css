@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+    --radius: 0.5rem;
+  }
+}
+
+:root {
+  --primary-red: #cb234b;
+  --primary-black: #000000;
+  --primary-dark: #343442;
+  --primary-gray: #b6b6c6;
+  --primary-silver: #f8f8f8;
+  --primary-white: #ffffff;
+
+  --blue-gradient: linear-gradient(#005bea 0%, #00c6fb 100%);
+  --red-gradient: linear-gradient(#ed1d24 0%, #ed1f69 100%);
+  --green-gradient: linear-gradient(#0ba360 0%, #3cba92 100%);
+  --pink-gradient: linear-gradient(#ff7eb3 0%, #ff758c 100%);
+  --purple-gradient: linear-gradient(#b224ef 0%, #7579ff 100%);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+#root {
+  padding: 0;
+}
+
+.primary-red {
+  color: var(--primary-red);
+}
+.primary-black {
+  color: var(--primary-black);
+}
+.primary-dark {
+  color: var(--primary-dark);
+}
+
+.primary-gray {
+  color: var(--primary-gray);
+}
+
+.primary-silver {
+  color: var(--primary-silver);
+}
+
+.primary-white {
+  color: var(--primary-white);
+}
+
+.blue-gradient {
+  background: var(--blue-gradient);
+}
+
+.red-gradient {
+  background: var(--red-gradient);
+}
+
+.green-gradient {
+  background: var(--green-gradient);
+}
+
+.pink-gradient {
+  background: var(--pink-gradient);
+}
+
+.purple-gradient {
+  background: var(--purple-gradient);
+}
+
+.muted-foreground {
+  color: var(--muted-foreground);
+}
+
+.hover-shadow-red-gradient:hover {
+  box-shadow:
+    0 2px 8px 5px #ed1d24,
+    0 2px 4px -1px #ed1d24;
+}
+
+.hover-shadow-purple-gradient:hover {
+  box-shadow:
+    0 2px 8px 5px #b224ef,
+    0 2px 4px -1px #b224ef;
+}
+
+.hover-shadow-blue-gradient:hover {
+  box-shadow:
+    0 2px 8px 5px #005bea,
+    0 2px 4px -1px #005bea;
+}
+
+.hover-shadow-pink-gradient:hover {
+  box-shadow:
+    0 2px 8px 5px #ff7eb3,
+    0 2px 4px -1px #ff7eb3;
+}
+
+.hover-shadow-green-gradient:hover {
+  box-shadow:
+    0 2px 8px 5px #0ba360,
+    0 2px 4px -1px #0ba360;
+}
+
+.hero-filter {
+  filter: brightness(0.6);
+}
+.filter-active {
+  filter: brightness(1);
+}
+
+.text-superhero {
+  filter: brightness(2);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
